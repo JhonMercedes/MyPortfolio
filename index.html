@@ -27,7 +27,7 @@
     <nav class="ja-menu" id="ja-menu">
         <ul> 
             <li class="ja-active">
-                <a href="#">Start</a>
+                <a href="#">Home</a>
             </li>
             <li>
                 <a href="#">Work</a>
@@ -37,10 +37,23 @@
             </li>
         </ul>
     </nav>
+    <div class="ja-btn-scroll">
+        
+    </div>
     <!--Criando Container para centralizar texto e imgens -->
     <main class="ja-container">
         <section class="ja-section" >
-
+            <div class="ja-row ja-section-home" id="ja-section-home">
+                <div class="ja-logotype">
+                    <p>User Interface designer</p>
+                </div>
+                <div class="ja-symbol">
+                    <img src="images/ui.png" alt="Jhon Armando Symbol">
+                </div>
+                <div class="ja-tagline">
+                    <p>User Interface designer</p>
+                </div>
+            </div>
         </section>
         <section class="ja-section" >
 
@@ -52,20 +65,7 @@
     </main>
 
     <!-- Usando Scritp -->
-    <script type="text/javascript">
-
-        var windowHeight = window.innerHeight;
-        var section = document.querySelectorAll('.ja-section')
-        
-        var i;
-        for(i=0; section.length>i; i++) {
-            var mySection = section[i];
-            mySection.style.height = (windowHeight-150)+'px';
-        }
-
-
-
-    </script>
+    <script type="text/javascript" src="js/main.js"></script>
 
 </body>
 

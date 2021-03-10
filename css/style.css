@@ -64,7 +64,7 @@ body {
     display: block;
     padding: 0 15px;
     font-family: 'Source Code Pro', monospace;
-    font-size: 25px;
+    font-size: 15px;
     color: #666;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -107,10 +107,71 @@ body {
     width: 70%;
     display: table;
     margin: 150px auto;
-    background: yellow;
+    position: relative;
+    z-index: 50;
 }
 
 .ja-section {
     border-bottom: 5px solid red;
 }
+
+.ja-row {
+    display: table;
+    width: 100%;
+}
+
+.ja-section-home {
+    height: 100%;
+}
+.ja-section-home .ja-logotype, .ja-section-home .ja-symbol, .ja-section-home .ja-tagline {
+    display: table-cell;
+    vertical-align: middle;
+}
+.ja-logotype {
+    width: 40%;
+    text-align: right;
+}
+.ja-logotype p{
+    font-family: 'Source Code Pro', monospace;
+    font-size: 15px;
+    color: #fff;
+    height: 38px;
+    display: inline-block;
+    padding: 0 12px;
+    line-height: 38px;
+    background-color: #4d3966;
+}
+.ja-symbol {
+    width: 20%;
+    text-align: center;
+}
+.ja-tagline {
+    width: 40%;
+    text-align: left;
+}
+.ja-tagline p{
+    font-family: 'Source Code Pro', monospace;
+    font-size: 15px;
+    color: #fff;
+    height: 38px;
+    display: inline-block;
+    padding: 0 12px;
+    line-height: 38px;
+    background-color: #4d3966;
+}
+
+.ja-btn-scroll {
+    width: 30px;
+    height: 30px;
+    display: block;
+    background-image: url('../images/easy-to-use.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: fixed;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
 
