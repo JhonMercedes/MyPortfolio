@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #29272b;
+}
+.ja-preloader {
+    width: 100%;
+    height: 100%;
+    display: none;
+    background-color: #4d3966;
+}
+
+.ja-preloader .ja-logo {
+    width: 100%;
+    height: 70px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.ja-preloader .ja-logo img {
+   
+    display: inline-block;
+}
+
+.ja-menu {
+    width: 100%;
+    height: 60px;
+    display: block;
+    position: fixed;
+    top: 20px;
+    left: 0;
+}
+
+.ja-menu ul {
+    display: table;
+    height: 60px;
+    list-style: none;
+    margin: 0 auto;
+}
+
+.ja-menu ul li {
+    height: 60px;
+    display: inline-block;
+    position: relative;
+}
+.ja-menu ul li:hover:after, .ja-menu ul li.ja-active::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    border-radius: 2px;
+    background-color: rgb(136, 9, 119);
+    bottom: -5;
+    left: 0;
+}
+.ja-menu ul li a {
+    height: 60px;
+    display: block;
+    padding: 0 15px;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 25px;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 60px;
+    text-decoration: none;
+}
+.ja-menu ul li a:hover, .ja-menu ul li.ja-active a {
+    color: #fff;
+    font-weight: 800;
+}
+
+
+
