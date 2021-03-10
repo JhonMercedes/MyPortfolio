@@ -34,6 +34,7 @@ body {
     position: fixed;
     top: 20px;
     left: 0;
+    z-index: 100;
 }
 
 .ja-menu ul {
@@ -51,7 +52,7 @@ body {
 .ja-menu ul li:hover:after, .ja-menu ul li.ja-active::after {
     content: '';
     position: absolute;
-    width: 100%;
+    width: 90%;
     height: 3px;
     border-radius: 2px;
     background-color: rgb(136, 9, 119);
@@ -75,5 +76,41 @@ body {
     font-weight: 800;
 }
 
+.ja-orbita {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: fixed;
+    left: -50%;
+    top: 0;
+    z-index: 1;
+    background-image: url('');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 100%;
+}
+.ja-saturno {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: fixed;
+    right: -50%;
+    top: 0;
+    z-index: 1;
+    background-image: url('');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 100%;
+}
 
+.ja-container {
+    width: 70%;
+    display: table;
+    margin: 150px auto;
+    background: yellow;
+}
+
+.ja-section {
+    border-bottom: 5px solid red;
+}
 

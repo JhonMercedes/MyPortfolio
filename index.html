@@ -11,6 +11,13 @@
 </head>
 <body>
 
+    <div class="ja-orbita" id="ja-orbita">
+
+    </div>
+    <div class="ja-saturno" id="ja-saturno">
+        
+    </div>
+
     <div class="ja-preloader" id="ja-preloader">
         <div class="ja-logo" id="ja-logo">
             <img src="images/ui.png" alt="Jhon Armando logo">
@@ -30,7 +37,36 @@
             </li>
         </ul>
     </nav>
-    
+    <!--Criando Container para centralizar texto e imgens -->
+    <main class="ja-container">
+        <section class="ja-section" >
+
+        </section>
+        <section class="ja-section" >
+
+        </section>
+        <section class="ja-section" >
+
+        </section>
+
+    </main>
+
+    <!-- Usando Scritp -->
+    <script type="text/javascript">
+
+        var windowHeight = window.innerHeight;
+        var section = document.querySelectorAll('.ja-section')
+        
+        var i;
+        for(i=0; section.length>i; i++) {
+            var mySection = section[i];
+            mySection.style.height = (windowHeight-150)+'px';
+        }
+
+
+
+    </script>
+
 </body>
 
 </html>
