@@ -2,8 +2,10 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
-
 body {
     background-color: #29272b;
 }
@@ -112,7 +114,7 @@ body {
 }
 
 .ja-section {
-    border-bottom: 5px solid red;
+    
 }
 
 .ja-row {
@@ -133,16 +135,16 @@ body {
 }
 .ja-logotype p{
     font-family: 'Source Code Pro', monospace;
-    font-size: 15px;
+    font-size: 20px;
     color: #fff;
     height: 38px;
     display: inline-block;
     padding: 0 12px;
     line-height: 38px;
-    background-color: #4d3966;
+    
 }
 .ja-symbol {
-    width: 20%;
+    width: 15%;
     text-align: center;
 }
 .ja-tagline {
@@ -157,7 +159,7 @@ body {
     display: inline-block;
     padding: 0 12px;
     line-height: 38px;
-    background-color: #4d3966;
+    
 }
 
 .ja-btn-scroll {
@@ -172,6 +174,115 @@ body {
     left: 0;
     right: 0;
     margin: 0 auto;
+}
+
+.ja-sidebar {
+    width: 60px;
+    height: 100%;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    display: block;
+}
+.ja-sidebar > .ja-logo {
+    width: 32px;
+    height: 180px;
+    margin: 15px auto;
+    display: block;
+}
+.ja-project-nav {
+    width: 100px;
+    display: table;
+    position: fixed;
+    top: 35%;
+    right: 0;
+    z-index: 50;
+}
+.ja-project-nav ul {
+    list-style: none;
+    width: 100%;
+}
+.ja-project-nav ul li {
+    width: 100%;
+    height: 40px;
+    display: block;
+    position: relative;
+}
+.ja-project-nav ul li:hover:after, .ja-project-nav ul li.ja-active::after {
+    content: '';
+    width: 40px;
+    height: 3px;
+    border-radius: 2px;
+    background: #4d3966;
+    position: absolute;
+    right: 0;
+    top: 18px;
+}
+
+.ja-project-nav ul li a{
+    height: 40px;;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 30px;
+    color: #666;
+    line-height: 40px;
+    text-decoration: none;
+}
+
+.ja-project-nav ul li:hover a{
+    font-size: 36px;
+    color:#fff;
+}
+
+.ja-project-list {
+    width: 100%;
+    display: table;
+}
+.ja-project-list ul {
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+.ja-project-list ul li {
+    width: 100%;
+    display: table;
+    position: relative;
+}
+
+.ja-mockup {
+    width: 45%;
+    display: block;
+    position: absolute;
+    top: -50px;
+    right: -55px;
+}
+.ja-mockup img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+.ja-description h1 {
+    color: #fff;
+    font-size: 36px;
+    font-family: 'Source Code Pro', monospace;
+    margin-bottom: 30px;
+}
+.ja-description p {
+    color: #fff;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    font-family: 'Source Code Pro', monospace;
+    margin-bottom: 40px;
+}
+.ja-banner img{
+    width: 100%;
+    max-height: 100%;
+    height: auto;
+    display: block;
+    border-radius: 3px;
 }
 
 
